@@ -1,4 +1,4 @@
-package com.crosx.app.UI.Activity;
+package com.crosx.app;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.crosx.app.BaseActivity;
 import com.crosx.app.R;
 import com.crosx.app.UI.Fragment.IMFragment;
+import com.crosx.app.UI.Fragment.VideoFragment;
 import com.crosx.app.Utils.FragmentTabHost;
 
 public class MainActivity extends BaseActivity {
@@ -27,6 +28,7 @@ public class MainActivity extends BaseActivity {
 
     private void initTabs() {
         addTabs("IM", "消息", IMFragment.class, null);
+        addTabs("Video", "视频", VideoFragment.class, null);
     }
 
     private void addTabs(String tag, String labelValue, Class clzss, Bundle args) {

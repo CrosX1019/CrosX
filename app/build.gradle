@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "com.crosx.app"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -27,4 +27,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/systembartint-1.0.3.jar')
+
+    //全景视频播放相关
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.6.0'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.0'
+    compile project(':vrlib')
 }

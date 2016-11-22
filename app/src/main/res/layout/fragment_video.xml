@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频播放"
+            style="@style/ActionBarText" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/video_edit_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="地址url" />
+
+    <Button
+        android:id="@+id/video_btn_vrVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全景视频" />
+
+    <Button
+        android:id="@+id/video_btn_normalVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通视频" />
+
+    <Button
+        android:id="@+id/video_btn_vrImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全景图片" />
+
+</LinearLayout>
