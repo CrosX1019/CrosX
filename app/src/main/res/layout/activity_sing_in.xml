@@ -4,7 +4,15 @@
     android:id="@+id/activity_sing_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crosx.app.UI.Activity.Sign.SingInActivity">
+    tools:context="com.crosx.app.ui.sign.SignInActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <Button
+        android:onClick="SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
 
 
 </RelativeLayout>

@@ -1,12 +1,10 @@
-package com.crosx.app.UI.Activity.Vr;
+package com.crosx.app.ui.vr;
 
 
 import android.net.Uri;
-import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.Surface;
 import android.view.View;
 import android.widget.ImageButton;
@@ -18,9 +16,9 @@ import android.widget.Toast;
 import com.asha.vrlib.MDVRLibrary;
 import com.asha.vrlib.model.BarrelDistortionConfig;
 import com.crosx.app.R;
-import com.crosx.app.Utils.VR.MD360PlayerActivity;
-import com.crosx.app.Utils.VR.MediaPlayerWrapper;
-import com.crosx.app.Utils.VR.StringUtil;
+import com.crosx.app.utils.vr.MD360PlayerActivity;
+import com.crosx.app.utils.vr.MediaPlayerWrapper;
+import com.crosx.app.utils.vr.StringUtil;
 
 import java.util.Timer;
 import java.util.TimerTask;

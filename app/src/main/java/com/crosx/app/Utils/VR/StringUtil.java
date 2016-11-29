@@ -1,4 +1,4 @@
-package com.crosx.app.Utils.VR;
+package com.crosx.app.utils.vr;
 
 import java.text.DecimalFormat;
 

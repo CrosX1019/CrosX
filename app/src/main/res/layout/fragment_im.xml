@@ -2,9 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
 
     <RelativeLayout
+        android:background="@color/base"
         android:id="@+id/im_actionBar"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize">
@@ -16,6 +19,12 @@
             style="@style/ActionBarText" />
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_connectKeFu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系客服" />
 
 
 </LinearLayout>

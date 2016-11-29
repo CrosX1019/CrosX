@@ -1,4 +1,4 @@
-package com.crosx.app;
+package com.crosx.app.application;
 
 import android.app.Application;
 
@@ -14,5 +14,6 @@ public class CrosXApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        AppHelper.getInstance().init(this);
     }
 }

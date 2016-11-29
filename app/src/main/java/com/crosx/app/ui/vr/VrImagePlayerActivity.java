@@ -1,4 +1,4 @@
-package com.crosx.app.UI.Activity.Vr;
+package com.crosx.app.ui.vr;
 
 import android.support.v7.app.AppCompatActivity;
 

@@ -3,14 +3,11 @@ package com.crosx.app;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.crosx.app.BaseActivity;
-import com.crosx.app.R;
-import com.crosx.app.UI.Fragment.IMFragment;
-import com.crosx.app.UI.Fragment.VideoFragment;
-import com.crosx.app.Utils.FragmentTabHost;
+import com.crosx.app.ui.im.IMFragment;
+import com.crosx.app.ui.vr.VideoFragment;
+import com.crosx.app.utils.FragmentTabHost;
 
 public class MainActivity extends BaseActivity {
 

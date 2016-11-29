@@ -1,4 +1,4 @@
-package com.crosx.app.Utils.VR;
+package com.crosx.app.utils.vr;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,12 +11,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 
 import com.asha.vrlib.MDVRLibrary;
 import com.crosx.app.R;
-import com.crosx.app.UI.Activity.Vr.VrImagePlayerActivity;
-import com.crosx.app.UI.Activity.Vr.VrVideoPlayerActivity;
+import com.crosx.app.ui.vr.VrImagePlayerActivity;
+import com.crosx.app.ui.vr.VrVideoPlayerActivity;
 
 /**
  * Created by CrosX on 2016/11/22.

@@ -1,4 +1,4 @@
-package com.crosx.app.Utils;
+package com.crosx.app.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
