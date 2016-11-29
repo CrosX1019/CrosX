@@ -1,22 +1,19 @@
-package com.crosx.app;
+package com.crosx.app.utils;
 
 import android.annotation.TargetApi;
-import android.content.Context;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.crosx.app.R;
 import com.hyphenate.helpdesk.easeui.UIProvider;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
-import java.lang.reflect.Field;
 
 /**
  * Created by CrosX on 2016/11/21.

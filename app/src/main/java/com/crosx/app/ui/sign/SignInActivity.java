@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.crosx.app.BaseActivity;
 import com.crosx.app.MainActivity;
 import com.crosx.app.R;
+import com.crosx.app.utils.BaseActivity;
 import com.hyphenate.chat.ChatClient;
 import com.hyphenate.helpdesk.callback.Callback;
 
@@ -27,7 +27,7 @@ public class SignInActivity extends BaseActivity {
             startActivity(new Intent(SignInActivity.this, MainActivity.class));
         } else {
             //未登录，需要登录后，再进入会话界面
-            ChatClient.getInstance().login("qqq123", "123123", new Callback() {
+            ChatClient.getInstance().login("test1019", "111111", new Callback() {
                 @Override
                 public void onSuccess() {
                     startActivity(new Intent(SignInActivity.this, MainActivity.class));
