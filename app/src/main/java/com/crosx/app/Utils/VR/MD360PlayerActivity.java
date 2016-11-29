@@ -94,32 +94,37 @@ public abstract class MD360PlayerActivity extends AppCompatActivity {
 
         mVRLibrary = createVRLibrary();
 
-        displayMode = (CheckBox) findViewById(R.id.displayMode);
-        displayMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    //单屏
-                    mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, NORMAL);
-                } else {
-                    mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, GLASS);
-                }
-            }
-        });
+//        mVRLibrary.switchProjectionMode(MD360PlayerActivity.this,MDVRLibrary.PROJECTION_MODE_SPHERE);
+        mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, NORMAL);
+        mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, TOUCH);
 
 
-        interactiveMode = (CheckBox) findViewById(R.id.interactiveMode);
-        interactiveMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    //单屏
-                    mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, TOUCH);
-                } else {
-                    mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, MOTION_WITH_TOUCH);
-                }
-            }
-        });
+//        displayMode = (CheckBox) findViewById(R.id.displayMode);
+//        displayMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (isChecked) {
+//                    //单屏
+//                    mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, NORMAL);
+//                } else {
+//                    mVRLibrary.switchDisplayMode(MD360PlayerActivity.this, GLASS);
+//                }
+//            }
+//        });
+//
+//
+//        interactiveMode = (CheckBox) findViewById(R.id.interactiveMode);
+//        interactiveMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (isChecked) {
+//                    //单屏
+//                    mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, TOUCH);
+//                } else {
+//                    mVRLibrary.switchInteractiveMode(MD360PlayerActivity.this, MOTION_WITH_TOUCH);
+//                }
+//            }
+//        });
     }
 
     abstract protected MDVRLibrary createVRLibrary();

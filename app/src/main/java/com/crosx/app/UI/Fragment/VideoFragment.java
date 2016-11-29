@@ -1,5 +1,6 @@
 package com.crosx.app.UI.Fragment;
 
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -28,7 +29,6 @@ public class VideoFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_video, null);
-        marginTop(mView.findViewById(R.id.video_actionBar));
         mVrVideo = (Button) mView.findViewById(R.id.video_btn_vrVideo);
         mVrVideo.setOnClickListener(new View.OnClickListener() {
             @Override

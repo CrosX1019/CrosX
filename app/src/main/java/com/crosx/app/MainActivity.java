@@ -20,7 +20,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        marginTop(findViewById(R.id.main_actionBar));
         mFTH = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mFTH.setup(this, getSupportFragmentManager(), R.id.realContent);
         initTabs();

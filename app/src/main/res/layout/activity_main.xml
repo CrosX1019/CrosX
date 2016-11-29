@@ -3,13 +3,15 @@
     android:id="@android:id/tabhost"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eee">
+    android:background="#eee"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
 
     <RelativeLayout
         android:id="@+id/main_actionBar"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
-        android:background="#6cf"></RelativeLayout>
+        android:background="@color/base" />
 
     <FrameLayout
         android:id="@android:id/tabcontent"

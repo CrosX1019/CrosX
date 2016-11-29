@@ -2,6 +2,7 @@ package com.crosx.app;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -33,7 +34,8 @@ public class BaseActivity extends AppCompatActivity {
         }
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
-        tintManager.setStatusBarTintResource(R.color.base);//状态栏所需颜色
+        tintManager.setNavigationBarTintEnabled(true);
+        tintManager.setTintColor(R.color.base);
     }
 
     @TargetApi(19)
@@ -49,27 +51,5 @@ public class BaseActivity extends AppCompatActivity {
         win.setAttributes(winParams);
     }
 
-    public static int getStatusBarHeight(Context context) {
-        Class<?> c;
-        Object obj;
-        Field field;
-        int x, statusBarHeight = 0;
-        try {
-            c = Class.forName("com.android.internal.R$dimen");
-            obj = c.newInstance();
-            field = c.getField("status_bar_height");
-            x = Integer.parseInt(field.get(obj).toString());
-            statusBarHeight = context.getResources().getDimensionPixelSize(x);
-        } catch (Exception e1) {
-            e1.printStackTrace();
-        }
-        return statusBarHeight;
-    }
 
-
-    protected void marginTop(View view) {
-        ViewGroup.MarginLayoutParams paramTest2 = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
-        paramTest2.setMargins(0, getStatusBarHeight(this), 0, 0);
-        view.requestLayout();
-    }
 }

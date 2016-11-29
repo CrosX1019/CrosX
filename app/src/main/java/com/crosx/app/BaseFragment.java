@@ -50,27 +50,4 @@ public class BaseFragment extends Fragment {
         win.setAttributes(winParams);
     }
 
-    public static int getStatusBarHeight(Context context) {
-        Class<?> c;
-        Object obj;
-        Field field;
-        int x, statusBarHeight = 0;
-        try {
-            c = Class.forName("com.android.internal.R$dimen");
-            obj = c.newInstance();
-            field = c.getField("status_bar_height");
-            x = Integer.parseInt(field.get(obj).toString());
-            statusBarHeight = context.getResources().getDimensionPixelSize(x);
-        } catch (Exception e1) {
-            e1.printStackTrace();
-        }
-        return statusBarHeight;
-    }
-
-    protected void marginTop(View view) {
-        ViewGroup.MarginLayoutParams paramTest2 = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
-        paramTest2.setMargins(0, getStatusBarHeight(getActivity()), 0, 0);
-        view.requestLayout();
-    }
-
 }

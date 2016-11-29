@@ -23,7 +23,6 @@ public class IMFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_im, null);
-        marginTop(mView.findViewById(R.id.im_actionBar));
         return mView;
     }
 }
