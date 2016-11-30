@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import com.crosx.app.BaseFragment;
 import com.crosx.app.R;
-import com.crosx.app.utils.vr.MD360PlayerActivity;
+import com.crosx.app.utils.MD360PlayerActivity;
 
 /**
  * Created by CrosX on 2016/11/22.

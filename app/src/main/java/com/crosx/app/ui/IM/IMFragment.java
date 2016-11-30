@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 
 import com.crosx.app.BaseFragment;
 import com.crosx.app.R;
-import com.hyphenate.helpdesk.easeui.ui.ChatFragment;
 import com.hyphenate.helpdesk.easeui.util.IntentBuilder;
 
 /**
@@ -30,7 +29,7 @@ public class IMFragment extends BaseFragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new IntentBuilder(getActivity())
-                        .setServiceIMNumber("CrosX").setTargetClass(ChatActivity.class).build();
+                        .setServiceIMNumber("crosx").setTargetClass(ChatActivity.class).build();
                 startActivity(intent);
             }
         });

@@ -16,9 +16,9 @@ import android.widget.Toast;
 import com.asha.vrlib.MDVRLibrary;
 import com.asha.vrlib.model.BarrelDistortionConfig;
 import com.crosx.app.R;
-import com.crosx.app.utils.vr.MD360PlayerActivity;
-import com.crosx.app.utils.vr.MediaPlayerWrapper;
-import com.crosx.app.utils.vr.StringUtil;
+import com.crosx.app.utils.MD360PlayerActivity;
+import com.crosx.app.utils.MediaPlayerWrapper;
+import com.crosx.app.utils.StringUtil;
 
 import java.util.Timer;
 import java.util.TimerTask;
