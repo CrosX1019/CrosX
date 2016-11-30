@@ -11,4 +11,15 @@
         <item name="android:layout_centerInParent">true</item>
     </style>
 
+    <style name="EditHintText">
+        <item name="android:textSize">@dimen/editHintTextSize</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="CustomButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/editHintTextSize</item>
+        <item name="android:background">@drawable/bg_button</item>
+    </style>
+
 </resources>

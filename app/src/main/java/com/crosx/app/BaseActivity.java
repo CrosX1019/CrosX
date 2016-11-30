@@ -26,9 +26,14 @@ import java.lang.reflect.Field;
 
 public class BaseActivity extends AppCompatActivity {
 
+    // Activity 在活动界面中的全局变量，用来代替this，在基类中定义是为了省去每个集成此类的 Activity 都定义一次
+    public BaseActivity mActivity;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mActivity = this;
 
         //顶部状态栏透明
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

@@ -41,4 +41,9 @@
         android:layout_height="wrap_content"
         android:text="全景图片" />
 
+    <android.opengl.GLSurfaceView
+        android:id="@+id/vr_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

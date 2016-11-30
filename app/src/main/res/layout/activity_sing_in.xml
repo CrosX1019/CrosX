@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_sing_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crosx.app.ui.sign.SignInActivity"
+    android:clipToPadding="false"
     android:fitsSystemWindows="true"
-    android:clipToPadding="false">
+    tools:context="com.crosx.app.ui.sign.SignInActivity">
+
+    <RelativeLayout
+        android:background="@color/base"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CrosX"
+            style="@style/ActionBarText" />
+
+    </RelativeLayout>
 
     <Button
-        android:onClick="SignIn"
+        android:layout_margin="10dp"
+        style="@style/CustomButton"
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="SignIn"
         android:text="登录" />
 
 
-</RelativeLayout>
+</LinearLayout>

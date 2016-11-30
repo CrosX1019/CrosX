@@ -33,6 +33,7 @@ public class AppHelper {
      */
     protected ChatManager.MessageListener messageListener = null;
 
+
     private UIProvider _uiProvider;
 
 

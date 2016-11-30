@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.crosx.app.ui.im.IMFragment;
+import com.crosx.app.ui.sign.MyFragment;
 import com.crosx.app.ui.vr.VideoFragment;
 import com.crosx.app.utils.FragmentTabHost;
 
@@ -23,8 +24,9 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initTabs() {
-        addTabs("IM", "消息", IMFragment.class, null);
         addTabs("Video", "视频", VideoFragment.class, null);
+        addTabs("IM", "消息", IMFragment.class, null);
+        addTabs("My", "我的", MyFragment.class, null);
     }
 
     private void addTabs(String tag, String labelValue, Class clzss, Bundle args) {

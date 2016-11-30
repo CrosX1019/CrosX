@@ -14,7 +14,6 @@ import android.widget.CheckBox;
 
 import com.asha.vrlib.MDVRLibrary;
 import com.crosx.app.R;
-import com.crosx.app.ui.vr.VrImagePlayerActivity;
 import com.crosx.app.ui.vr.VrVideoPlayerActivity;
 
 /**
@@ -66,15 +65,6 @@ public abstract class MD360PlayerActivity extends AppCompatActivity {
         start(context, uri, VrVideoPlayerActivity.class);
     }
 
-    /**
-     * 播放全景图片
-     *
-     * @param context
-     * @param uri
-     */
-    public static void startBitmap(Context context, Uri uri) {
-        start(context, uri, VrImagePlayerActivity.class);
-    }
 
     //全景库
     private MDVRLibrary mVRLibrary;
