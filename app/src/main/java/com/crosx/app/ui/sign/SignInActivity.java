@@ -5,13 +5,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import com.crosx.app.BaseActivity;
 import com.crosx.app.MainActivity;
 import com.crosx.app.R;
 import com.crosx.app.utils.MySharedPrefUtil;
+import com.crosx.app.utils.BaseActivity;
 import com.hyphenate.chat.ChatClient;
 import com.hyphenate.helpdesk.callback.Callback;
 
@@ -23,11 +20,7 @@ public class SignInActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sing_in);
-//        initView();
     }
-
-//    private void initView(){
-//    }
 
     public void SignIn(View view) {
 
@@ -35,12 +28,8 @@ public class SignInActivity extends BaseActivity {
             //已经登录，可以直接进入会话界面
             startActivity(new Intent(SignInActivity.this, MainActivity.class));
         } else {
-//            //未登录，需要登录后，再进入会话界面
-//            mName = mEtName.getText().toString();
-//            mPwd = mEtPwd.getText().toString();
-//            if (!TextUtils.isEmpty(mName)||!TextUtils.isEmpty(mPwd)){
-//                if (isMobileNum(mName)){
             ChatClient.getInstance().login("qqq123", "aaaaaa", new Callback() {
+                //未登录，需要登录后，再进入会话界面
                 @Override
                 public void onSuccess() {
                     MySharedPrefUtil.saveData(mActivity, "isLogin", true);
@@ -57,16 +46,8 @@ public class SignInActivity extends BaseActivity {
 
                 }
             });
-                }
-//        else{
-//                    Toast.makeText(mActivity, "手机号格式错误", Toast.LENGTH_SHORT).show();
-//                }
-//
-//            }else {
-//                Toast.makeText(mActivity, "账号或密码不能为空", Toast.LENGTH_SHORT).show();
-//            }
-//
-//        }
+        }
+
     }
 
     /* 验证手机格式*/

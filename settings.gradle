@@ -1,1 +1,2 @@
-include ':app', ':vrlib'
+include ':app', ':vrlib', ':kefu-easeui'
+

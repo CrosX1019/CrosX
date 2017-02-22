@@ -44,7 +44,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile files('libs/systembartint-1.0.3.jar')
     //全景视频播放相关
     compile project(':vrlib')
     compile 'com.android.support:appcompat-v7:25.0.0'
@@ -53,9 +52,10 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     testCompile 'junit:junit:4.12'
     //环信客服SDK
-    compile 'com.hyphenate:kefu-easeui-android:latest.release'
     //或者 compile 'com.hyphenate:kefu-easeui-android:1.0.1'
     //EaseUI中 头像获取用到了glide，请添加glide库
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //其他版本也可以
+    compile files('libs/systembartint-1.0.3.jar')
+    compile 'com.hyphenate:kefu-easeui-android:latest.release'
 }

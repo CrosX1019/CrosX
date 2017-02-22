@@ -1,6 +1,7 @@
 package com.crosx.app;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import com.crosx.app.ui.im.IMFragment;
 import com.crosx.app.ui.sign.MyFragment;
 import com.crosx.app.ui.vr.VideoFragment;
+import com.crosx.app.utils.BaseActivity;
 import com.crosx.app.utils.FragmentTabHost;
 
 public class MainActivity extends BaseActivity {
