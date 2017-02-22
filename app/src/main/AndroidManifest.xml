@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.im.ChatActivity" />
         <activity
             android:name=".ui.vr.VrVideoPlayerActivity"
             android:configChanges="orientation|screenSize"

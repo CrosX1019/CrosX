@@ -1,13 +1,12 @@
 package com.crosx.app.ui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.crosx.app.BaseActivity;
 import com.crosx.app.MainActivity;
 import com.crosx.app.R;
 import com.crosx.app.ui.sign.SignInActivity;
+import com.crosx.app.utils.BaseActivity;
 import com.crosx.app.utils.MySharedPrefUtil;
 import com.hyphenate.chat.ChatClient;
 
