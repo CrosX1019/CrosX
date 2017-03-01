@@ -8,7 +8,7 @@ import android.view.View;
 import com.crosx.app.MainActivity;
 import com.crosx.app.R;
 import com.crosx.app.utils.MySharedPrefUtil;
-import com.crosx.app.utils.BaseActivity;
+import com.crosx.app.BaseActivity;
 import com.hyphenate.chat.ChatClient;
 import com.hyphenate.helpdesk.callback.Callback;
 
@@ -19,7 +19,7 @@ public class SignInActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sing_in);
+        setContentView(R.layout.activity_sign_in);
     }
 
     public void SignIn(View view) {
@@ -47,7 +47,6 @@ public class SignInActivity extends BaseActivity {
                 }
             });
         }
-
     }
 
     /* 验证手机格式*/

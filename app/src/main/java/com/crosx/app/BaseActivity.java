@@ -1,4 +1,4 @@
-package com.crosx.app.utils;
+package com.crosx.app;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -10,7 +10,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.crosx.app.R;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.crosx.app.utils.HttpUtil;
 import com.hyphenate.helpdesk.easeui.UIProvider;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
@@ -26,11 +29,16 @@ public class BaseActivity extends AppCompatActivity {
     // Activity 在活动界面中的全局变量，用来代替this，在基类中定义是为了省去每个集成此类的 Activity 都定义一次
     public BaseActivity mActivity;
 
+    private RequestQueue mRequestQueue;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         mActivity = this;
+
+        mRequestQueue = HttpUtil.getRequestQueue(this);
 
         //顶部状态栏透明
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -74,5 +82,25 @@ public class BaseActivity extends AppCompatActivity {
         return (T) findViewById(id);
     }
 
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //销毁请求队列
+        if (null != mRequestQueue
+                && mRequestQueue.getSequenceNumber() > 0) {
+            mRequestQueue.cancelAll(this);
+        }
+    }
+
+
+    protected void addRequest(Request request) {
+        request.setRetryPolicy(new DefaultRetryPolicy(
+                3 * 1000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
+        ));
+        mRequestQueue.add(request);
+    }
 
 }

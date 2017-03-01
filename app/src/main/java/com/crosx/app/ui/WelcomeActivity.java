@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.crosx.app.MainActivity;
 import com.crosx.app.R;
 import com.crosx.app.ui.sign.SignInActivity;
-import com.crosx.app.utils.BaseActivity;
+import com.crosx.app.BaseActivity;
 import com.crosx.app.utils.MySharedPrefUtil;
 import com.hyphenate.chat.ChatClient;
 

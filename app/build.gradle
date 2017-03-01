@@ -58,4 +58,7 @@ dependencies {
     //其他版本也可以
     compile files('libs/systembartint-1.0.3.jar')
     compile 'com.hyphenate:kefu-easeui-android:latest.release'
+    compile files('libs/fastjson.jar')
+    compile files('libs/volly-1.0.11.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
 }
